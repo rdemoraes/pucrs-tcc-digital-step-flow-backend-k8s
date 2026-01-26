@@ -1,0 +1,17 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: digital-step-flow-backend
+  namespace: digital-step-flow
+  labels:
+    app: digital-step-flow-backend
+    app.kubernetes.io/component: backend
+spec:
+  selector:
+    matchLabels:
+      app: digital-step-flow-backend
+  endpoints:
+  - port: metrics
+    path: /metrics
+    interval: 30s
+    scrapeTimeout: 10s
