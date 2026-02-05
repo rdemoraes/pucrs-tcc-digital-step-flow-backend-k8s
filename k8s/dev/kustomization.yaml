@@ -13,6 +13,7 @@ commonLabels:
 images:
 - name: backend
   newName: raphaelmoraes/digital-step-flow-backend
+  newTag: 0.0.1
 - name: raphaelmoraes/digital-step-flow-backend
   newName: raphaelmoraes/digital-step-flow-backend
   newTag: 24.13.0-r1-dev
